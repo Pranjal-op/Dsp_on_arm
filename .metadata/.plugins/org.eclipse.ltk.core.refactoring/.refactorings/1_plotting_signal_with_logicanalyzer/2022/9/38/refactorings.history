@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;1_plotting_signal_with_logicanalyzer/Src/signal.c&apos; to &apos;signals.c&apos;" description="Rename resource &apos;signal.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/signal.c" name="signals.c" stamp="1663091896017" updateReferences="true"/>
+</session>

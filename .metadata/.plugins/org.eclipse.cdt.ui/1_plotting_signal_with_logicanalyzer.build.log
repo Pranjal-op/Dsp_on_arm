@@ -1,0 +1,10 @@
+16:56:41 **** Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
+make -j8 all 
+arm-none-eabi-size   1_plotting_signal_with_logicanalyzer.elf 
+   text	   data	    bss	    dec	    hex	filename
+    844	   1212	   1572	   3628	    e2c	1_plotting_signal_with_logicanalyzer.elf
+Finished building: default.size.stdout
+ 
+
+16:56:46 Build Finished. 0 errors, 0 warnings. (took 4s.578ms)
+

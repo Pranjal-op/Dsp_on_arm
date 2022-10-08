@@ -1,0 +1,55 @@
+21:20:36 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:41:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   41 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "2_Uart_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\2_Uart_Driver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_Uart_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_Uart_Driver.elf
+ 
+arm-none-eabi-size   2_Uart_Driver.elf 
+arm-none-eabi-objdump -h -S  2_Uart_Driver.elf  > "2_Uart_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_Uart_Driver.list
+ 
+21:20:55 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:41:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   41 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "2_Uart_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\2_Uart_Driver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_Uart_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_Uart_Driver.elf
+ 
+arm-none-eabi-size   2_Uart_Driver.elf 
+arm-none-eabi-objdump -h -S  2_Uart_Driver.elf  > "2_Uart_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_Uart_Driver.list
+ 
+21:33:02 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
+make -j8 all 
+arm-none-eabi-size   2_Uart_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+Finished building: default.size.stdout
+ 
+21:33:08 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
+make -j8 all 
+arm-none-eabi-size   2_Uart_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+Finished building: default.size.stdout
+ 
+21:34:37 **** Incremental Build of configuration Debug for project 3_Plotting_signal_with_SerialPlotter ****
+make -j8 all 
+arm-none-eabi-size   3_Plotting_signal_with_SerialPlotter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24348	   1680	   1584	  27612	   6bdc	3_Plotting_signal_with_SerialPlotter.elf
+Finished building: default.size.stdout
+ 
