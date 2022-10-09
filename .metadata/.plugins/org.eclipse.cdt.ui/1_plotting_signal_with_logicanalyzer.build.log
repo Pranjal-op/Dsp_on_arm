@@ -1,10 +1,20 @@
-16:56:41 **** Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
-make -j8 all 
+00:13:46 **** Incremental Build of configuration Release for project 1_plotting_signal_with_logicanalyzer ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "1_plotting_signal_with_logicanalyzer.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_plotting_signal_with_logicanalyzer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_plotting_signal_with_logicanalyzer.elf
+ 
 arm-none-eabi-size   1_plotting_signal_with_logicanalyzer.elf 
+arm-none-eabi-objdump -h -S  1_plotting_signal_with_logicanalyzer.elf  > "1_plotting_signal_with_logicanalyzer.list"
    text	   data	    bss	    dec	    hex	filename
-    844	   1212	   1572	   3628	    e2c	1_plotting_signal_with_logicanalyzer.elf
+    716	      8	   1568	   2292	    8f4	1_plotting_signal_with_logicanalyzer.elf
 Finished building: default.size.stdout
  
+Finished building: 1_plotting_signal_with_logicanalyzer.list
+ 
 
-16:56:46 Build Finished. 0 errors, 0 warnings. (took 4s.578ms)
+00:13:47 Build Finished. 0 errors, 0 warnings. (took 771ms)
 

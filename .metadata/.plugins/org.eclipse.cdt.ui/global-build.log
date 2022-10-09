@@ -1,55 +1,75 @@
-21:20:36 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:41:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
-   41 | static void plot_input_signal(void){
-      |             ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "2_Uart_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\2_Uart_Driver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_Uart_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 2_Uart_Driver.elf
+01:34:23 **** Incremental Build of configuration Debug for project 5.Testing_cmsis-dsp_float32 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Src/main.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+../Src/main.c:47:13: warning: 'serial_plot_input_sig' defined but not used [-Wunused-function]
+   47 | static void serial_plot_input_sig(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Inc/uart.h:12,
+                 from ../Src/uart.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "5.Testing_cmsis-dsp_float32.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5.Testing_cmsis-dsp_float32.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5.Testing_cmsis-dsp_float32.elf
  
-arm-none-eabi-size   2_Uart_Driver.elf 
-arm-none-eabi-objdump -h -S  2_Uart_Driver.elf  > "2_Uart_Driver.list"
+arm-none-eabi-size   5.Testing_cmsis-dsp_float32.elf 
+arm-none-eabi-objdump -h -S  5.Testing_cmsis-dsp_float32.elf  > "5.Testing_cmsis-dsp_float32.list"
    text	   data	    bss	    dec	    hex	filename
-  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+  24300	   1756	   1588	  27644	   6bfc	5.Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
-Finished building: 2_Uart_Driver.list
+Finished building: 5.Testing_cmsis-dsp_float32.list
  
-21:20:55 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c:41:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
-   41 | static void plot_input_signal(void){
-      |             ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "2_Uart_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\2_Uart_Driver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_Uart_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 2_Uart_Driver.elf
+01:35:14 **** Incremental Build of configuration Debug for project 5.Testing_cmsis-dsp_float32 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -o "5.Testing_cmsis-dsp_float32.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5.Testing_cmsis-dsp_float32.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5.Testing_cmsis-dsp_float32.elf
  
-arm-none-eabi-size   2_Uart_Driver.elf 
-arm-none-eabi-objdump -h -S  2_Uart_Driver.elf  > "2_Uart_Driver.list"
+arm-none-eabi-size   5.Testing_cmsis-dsp_float32.elf 
+arm-none-eabi-objdump -h -S  5.Testing_cmsis-dsp_float32.elf  > "5.Testing_cmsis-dsp_float32.list"
    text	   data	    bss	    dec	    hex	filename
-  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+  24300	   1756	   1588	  27644	   6bfc	5.Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
-Finished building: 2_Uart_Driver.list
+Finished building: 5.Testing_cmsis-dsp_float32.list
  
-21:33:02 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
-make -j8 all 
-arm-none-eabi-size   2_Uart_Driver.elf 
+01:37:58 **** Incremental Build of configuration Debug for project 5.Testing_cmsis-dsp_float32 ****
+make -j4 all 
+arm-none-eabi-gcc -o "5.Testing_cmsis-dsp_float32.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5.Testing_cmsis-dsp_float32.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5.Testing_cmsis-dsp_float32.elf
+ 
+arm-none-eabi-size   5.Testing_cmsis-dsp_float32.elf 
+arm-none-eabi-objdump -h -S  5.Testing_cmsis-dsp_float32.elf  > "5.Testing_cmsis-dsp_float32.list"
    text	   data	    bss	    dec	    hex	filename
-  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+  24300	   1756	   1588	  27644	   6bfc	5.Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
-21:33:08 **** Incremental Build of configuration Debug for project 2_Uart_Driver ****
-make -j8 all 
-arm-none-eabi-size   2_Uart_Driver.elf 
+Finished building: 5.Testing_cmsis-dsp_float32.list
+ 
+01:41:05 **** Incremental Build of configuration Debug for project 5.Testing_cmsis-dsp_float32 ****
+make -j4 all 
+arm-none-eabi-size   5.Testing_cmsis-dsp_float32.elf 
    text	   data	    bss	    dec	    hex	filename
-  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+  24300	   1756	   1588	  27644	   6bfc	5.Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
-21:34:37 **** Incremental Build of configuration Debug for project 3_Plotting_signal_with_SerialPlotter ****
-make -j8 all 
-arm-none-eabi-size   3_Plotting_signal_with_SerialPlotter.elf 
+01:41:37 **** Incremental Build of configuration Debug for project 5.Testing_cmsis-dsp_float32 ****
+make -j4 all 
+arm-none-eabi-size   5.Testing_cmsis-dsp_float32.elf 
    text	   data	    bss	    dec	    hex	filename
-  24348	   1680	   1584	  27612	   6bdc	3_Plotting_signal_with_SerialPlotter.elf
+  24300	   1756	   1588	  27644	   6bfc	5.Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  

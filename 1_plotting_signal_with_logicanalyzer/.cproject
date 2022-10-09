@@ -44,9 +44,11 @@
 									<listOptionValue builtIn="false" value="STM32F411xE"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.1334739860" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="../Inc"/>
 									<listOptionValue builtIn="false" value="&quot;D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Device\ST\STM32F4xx\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Device\ST\STM32F4xx\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\Inc&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.193285891" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -117,9 +119,12 @@
 									<listOptionValue builtIn="false" value="STM32"/>
 									<listOptionValue builtIn="false" value="STM32F4"/>
 									<listOptionValue builtIn="false" value="STM32F411RETx"/>
+									<listOptionValue builtIn="false" value="STM32F411xE"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.1430830654" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Inc"/>
+									<listOptionValue builtIn="false" value="&quot;D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Device\ST\STM32F4xx\Include&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.678613687" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

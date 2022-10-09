@@ -15,7 +15,7 @@ int main()
    /*SCB-> CPACR |=((3UL << 10*2) | (3UL << 11*2)) ;*/
 	// More readable way to enable the fpu
 
-   SCB ->CPACR |=(1U<<20);
+   SCB-> CPACR |=(1U<<20);
    SCB-> CPACR |=(1U<<21);
    SCB-> CPACR |=(1U<<22);
    SCB-> CPACR |=(1U<<23);
