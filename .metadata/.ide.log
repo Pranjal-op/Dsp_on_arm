@@ -1079,3 +1079,6 @@
 2022-10-08 20:26:50,569 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 2022-10-08 20:26:50,571 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
 2022-10-08 20:26:50,575 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-09 01:39:54,827 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-09 01:39:56,836 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-09 01:39:58,851 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
