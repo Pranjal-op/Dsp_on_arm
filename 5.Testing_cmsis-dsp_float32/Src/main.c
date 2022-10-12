@@ -34,6 +34,7 @@ int main(){
 
    }
 }
+
 static void plot_input_signal(void){
 
 		int i;

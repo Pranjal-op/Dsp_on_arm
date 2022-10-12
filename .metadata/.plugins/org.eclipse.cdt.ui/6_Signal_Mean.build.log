@@ -1,0 +1,10 @@
+00:27:00 **** Incremental Build of configuration Debug for project 6_Signal_Mean ****
+make -j8 all 
+arm-none-eabi-size   6_Signal_Mean.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24500	   1756	   1588	  27844	   6cc4	6_Signal_Mean.elf
+Finished building: default.size.stdout
+ 
+
+00:27:00 Build Finished. 0 errors, 0 warnings. (took 283ms)
+

@@ -1,9 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_plotting_signal_with_logicanalyzer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_Uart_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5.Testing_cmsis-dsp_float32,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4.Integarating_CMSIS-DSP
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_Plotting_signal_with_SerialPlotter,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_plotting_signal_with_logicanalyzer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_Uart_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4.Integarating_CMSIS-DSP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_Signal_CMSIS-DSP
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_plotting_signal_with_logicanalyzer/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_plotting_signal_with_logicanalyzer/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_Uart_Driver/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_Plotting_signal_with_SerialPlotter/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_Signal_Std\ Debug/activeLaunchMode=debug
