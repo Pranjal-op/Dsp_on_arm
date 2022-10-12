@@ -1,19 +1,10 @@
-00:28:21 **** Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
+01:22:37 **** Incremental Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
-../Src/signals.c:3:10: fatal error: signals.h: No such file or directory
-    3 | #include "signals.h"
-      |          ^~~~~~~~~~~
-compilation terminated.
-make: *** [Src/subdir.mk:28: Src/signals.o] Error 1
-make: *** Waiting for unfinished jobs....
-../Src/main.c:2:10: fatal error: signals.h: No such file or directory
-    2 | #include "signals.h"
-      |          ^~~~~~~~~~~
-compilation terminated.
-make: *** [Src/subdir.mk:28: Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-size   1_plotting_signal_with_logicanalyzer.elf 
+   text	   data	    bss	    dec	    hex	filename
+    844	   1212	   1572	   3628	    e2c	1_plotting_signal_with_logicanalyzer.elf
+Finished building: default.size.stdout
+ 
 
-00:28:22 Build Failed. 5 errors, 0 warnings. (took 387ms)
+01:22:38 Build Finished. 0 errors, 0 warnings. (took 182ms)
 

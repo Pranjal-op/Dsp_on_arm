@@ -1,10 +1,26 @@
-23:34:18 **** Incremental Build of configuration Debug for project 5_Testing_cmsis-dsp_float32 ****
+01:22:39 **** Build of configuration Debug for project 5_Testing_cmsis-dsp_float32 ****
 make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Src/main.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+../Src/main.c:38:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   38 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "5_Testing_cmsis-dsp_float32.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_Testing_cmsis-dsp_float32.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_Testing_cmsis-dsp_float32.elf
+ 
 arm-none-eabi-size   5_Testing_cmsis-dsp_float32.elf 
+arm-none-eabi-objdump -h -S  5_Testing_cmsis-dsp_float32.elf  > "5_Testing_cmsis-dsp_float32.list"
    text	   data	    bss	    dec	    hex	filename
   24364	   1756	   1588	  27708	   6c3c	5_Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
+Finished building: 5_Testing_cmsis-dsp_float32.list
+ 
 
-23:34:18 Build Finished. 0 errors, 0 warnings. (took 188ms)
+01:22:39 Build Finished. 0 errors, 2 warnings. (took 605ms)
 

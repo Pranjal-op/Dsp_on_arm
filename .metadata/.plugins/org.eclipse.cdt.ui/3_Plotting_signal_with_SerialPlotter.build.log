@@ -1,4 +1,4 @@
-23:34:17 **** Incremental Build of configuration Debug for project 3_Plotting_signal_with_SerialPlotter ****
+01:22:38 **** Build of configuration Debug for project 3_Plotting_signal_with_SerialPlotter ****
 make -j8 all 
 arm-none-eabi-size   3_Plotting_signal_with_SerialPlotter.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   3_Plotting_signal_with_SerialPlotter.elf
 Finished building: default.size.stdout
  
 
-23:34:17 Build Finished. 0 errors, 0 warnings. (took 176ms)
+01:22:38 Build Finished. 0 errors, 0 warnings. (took 179ms)
 

@@ -49,6 +49,7 @@
 									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\chip_headers\CMSIS\Device\ST\STM32F4xx\Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\STMF32\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\Inc&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.193285891" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

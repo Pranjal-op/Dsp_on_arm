@@ -1,4 +1,49 @@
-01:12:41 **** Incremental Build of configuration Debug for project 9_Signal_CMSIS-DSP ****
+01:22:28 **** Incremental Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "1_plotting_signal_with_logicanalyzer.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\1_plotting_signal_with_logicanalyzer\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_plotting_signal_with_logicanalyzer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_plotting_signal_with_logicanalyzer.elf
+ 
+arm-none-eabi-size   1_plotting_signal_with_logicanalyzer.elf 
+arm-none-eabi-objdump -h -S  1_plotting_signal_with_logicanalyzer.elf  > "1_plotting_signal_with_logicanalyzer.list"
+   text	   data	    bss	    dec	    hex	filename
+    844	   1212	   1572	   3628	    e2c	1_plotting_signal_with_logicanalyzer.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1_plotting_signal_with_logicanalyzer.list
+ 
+01:22:37 **** Incremental Build of configuration Debug for project 1_plotting_signal_with_logicanalyzer ****
+make -j8 all 
+arm-none-eabi-size   1_plotting_signal_with_logicanalyzer.elf 
+   text	   data	    bss	    dec	    hex	filename
+    844	   1212	   1572	   3628	    e2c	1_plotting_signal_with_logicanalyzer.elf
+Finished building: default.size.stdout
+ 
+01:22:38 **** Build of configuration Debug for project 2_Uart_Driver ****
+make -j8 all 
+arm-none-eabi-size   2_Uart_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24252	    476	   1588	  26316	   66cc	2_Uart_Driver.elf
+Finished building: default.size.stdout
+ 
+01:22:38 **** Build of configuration Debug for project 3_Plotting_signal_with_SerialPlotter ****
+make -j8 all 
+arm-none-eabi-size   3_Plotting_signal_with_SerialPlotter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24348	   1680	   1584	  27612	   6bdc	3_Plotting_signal_with_SerialPlotter.elf
+Finished building: default.size.stdout
+ 
+01:22:38 **** Build of configuration Debug for project 4_Integarating_CMSIS-DSP ****
+make -j8 all 
+arm-none-eabi-size   4_Integarating_CMSIS-DSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24420	   1680	   1592	  27692	   6c2c	4_Integarating_CMSIS-DSP.elf
+Finished building: default.size.stdout
+ 
+01:22:39 **** Build of configuration Debug for project 5_Testing_cmsis-dsp_float32 ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
@@ -7,28 +52,42 @@ D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSI
    51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
       | 
 <command-line>: note: this is the location of the previous definition
-../Src/main.c:76:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
-   76 | static void plot_input_signal(void){
+../Src/main.c:38:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   38 | static void plot_input_signal(void){
       |             ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "9_Signal_CMSIS-DSP.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\9_Signal_CMSIS-DSP\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_Signal_CMSIS-DSP.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\9_Signal_CMSIS-DSP\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_Signal_CMSIS-DSP.elf
+arm-none-eabi-gcc -o "5_Testing_cmsis-dsp_float32.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_Testing_cmsis-dsp_float32.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\5.Testing_cmsis-dsp_float32\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_Testing_cmsis-dsp_float32.elf
  
-arm-none-eabi-size   9_Signal_CMSIS-DSP.elf 
-arm-none-eabi-objdump -h -S  9_Signal_CMSIS-DSP.elf  > "9_Signal_CMSIS-DSP.list"
+arm-none-eabi-size   5_Testing_cmsis-dsp_float32.elf 
+arm-none-eabi-objdump -h -S  5_Testing_cmsis-dsp_float32.elf  > "5_Testing_cmsis-dsp_float32.list"
    text	   data	    bss	    dec	    hex	filename
-  27480	   1756	   1604	  30840	   7878	9_Signal_CMSIS-DSP.elf
+  24364	   1756	   1588	  27708	   6c3c	5_Testing_cmsis-dsp_float32.elf
 Finished building: default.size.stdout
  
-Finished building: 9_Signal_CMSIS-DSP.list
+Finished building: 5_Testing_cmsis-dsp_float32.list
  
-01:13:12 **** Incremental Build of configuration Debug for project 9_Signal_CMSIS-DSP ****
+01:22:39 **** Incremental Build of configuration Debug for project 6_Signal_Mean ****
 make -j8 all 
-arm-none-eabi-size   9_Signal_CMSIS-DSP.elf 
+arm-none-eabi-size   6_Signal_Mean.elf 
    text	   data	    bss	    dec	    hex	filename
-  27480	   1756	   1604	  30840	   7878	9_Signal_CMSIS-DSP.elf
+  24500	   1756	   1588	  27844	   6cc4	6_Signal_Mean.elf
 Finished building: default.size.stdout
  
-01:13:25 **** Incremental Build of configuration Debug for project 9_Signal_CMSIS-DSP ****
+01:22:40 **** Incremental Build of configuration Debug for project 7_Signal_Variance ****
+make -j8 all 
+arm-none-eabi-size   7_Signal_Variance.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26640	   1756	   1596	  29992	   7528	7_Signal_Variance.elf
+Finished building: default.size.stdout
+ 
+01:22:40 **** Incremental Build of configuration Debug for project 8_Signal_Std ****
+make -j8 all 
+arm-none-eabi-size   8_Signal_Std.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27172	   1756	   1596	  30524	   773c	8_Signal_Std.elf
+Finished building: default.size.stdout
+ 
+01:22:40 **** Incremental Build of configuration Debug for project 9_Signal_CMSIS-DSP ****
 make -j8 all 
 arm-none-eabi-size   9_Signal_CMSIS-DSP.elf 
    text	   data	    bss	    dec	    hex	filename
