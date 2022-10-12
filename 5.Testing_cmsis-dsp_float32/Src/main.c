@@ -27,7 +27,7 @@ int main(){
 	while(1){
 
 
-		plot_input_signal();
+		serial_plot_input_sig();
 
 //		plot_input_signal();
 

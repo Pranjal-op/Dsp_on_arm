@@ -1082,3 +1082,25 @@
 2022-10-09 01:39:54,827 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
 2022-10-09 01:39:56,836 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
 2022-10-09 01:39:58,851 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-10 02:12:01,944 [INFO] Activator:177 - 
+
+
+2022-10-10 02:12:01,946 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-10 02:12:28,020 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-10 02:12:28,021 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-10 02:12:28,026 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-10 02:12:38,626 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2022-10-12 23:01:25,532 [INFO] Activator:177 - 
+
+
+2022-10-12 23:01:25,534 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-12 23:02:04,996 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-12 23:02:04,998 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-12 23:02:05,000 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-12 23:15:45,836 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-12 23:15:49,941 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2022-10-12 23:18:34,309 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-12 23:27:44,020 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2022-10-12 23:28:14,316 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2022-10-12 23:28:15,020 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2022-10-12 23:28:15,233 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false

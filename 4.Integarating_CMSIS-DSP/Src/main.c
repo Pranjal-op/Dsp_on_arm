@@ -33,7 +33,7 @@ int main(){
 				}
 
 
-//		plot_input_signal();
+		plot_input_signal();
 
 
    }

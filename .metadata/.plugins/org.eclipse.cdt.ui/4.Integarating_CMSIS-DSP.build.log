@@ -1,10 +1,10 @@
-01:09:12 **** Incremental Build of configuration Debug for project 4.Integarating_CMSIS-DSP ****
-make -j4 all 
+23:27:58 **** Incremental Build of configuration Debug for project 4.Integarating_CMSIS-DSP ****
+make -j8 all 
 arm-none-eabi-size   4.Integarating_CMSIS-DSP.elf 
    text	   data	    bss	    dec	    hex	filename
-  24348	   1680	   1584	  27612	   6bdc	4.Integarating_CMSIS-DSP.elf
+  24420	   1680	   1592	  27692	   6c2c	4.Integarating_CMSIS-DSP.elf
 Finished building: default.size.stdout
  
 
-01:09:13 Build Finished. 0 errors, 0 warnings. (took 268ms)
+23:27:58 Build Finished. 0 errors, 0 warnings. (took 238ms)
 

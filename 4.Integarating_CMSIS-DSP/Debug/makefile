@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 4.Integarating_CMSIS-DSP
+BUILD_ARTIFACT_NAME := 4_Integarating_CMSIS-DSP
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-4.Integarating_CMSIS-DSP.elf \
+4_Integarating_CMSIS-DSP.elf \
 
 MAP_FILES += \
-4.Integarating_CMSIS-DSP.map \
+4_Integarating_CMSIS-DSP.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-4.Integarating_CMSIS-DSP.list \
+4_Integarating_CMSIS-DSP.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 4.Integarating_CMSIS-DSP.elf secondary-outputs
+main-build: 4_Integarating_CMSIS-DSP.elf secondary-outputs
 
 # Tool invocations
-4.Integarating_CMSIS-DSP.elf 4.Integarating_CMSIS-DSP.map: $(OBJS) $(USER_OBJS) D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "4.Integarating_CMSIS-DSP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4.Integarating_CMSIS-DSP.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+4_Integarating_CMSIS-DSP.elf 4_Integarating_CMSIS-DSP.map: $(OBJS) $(USER_OBJS) D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "4_Integarating_CMSIS-DSP.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_Integarating_CMSIS-DSP.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\4.Integarating_CMSIS-DSP\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-4.Integarating_CMSIS-DSP.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "4.Integarating_CMSIS-DSP.list"
+4_Integarating_CMSIS-DSP.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "4_Integarating_CMSIS-DSP.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) 4.Integarating_CMSIS-DSP.elf 4.Integarating_CMSIS-DSP.list 4.Integarating_CMSIS-DSP.map default.size.stdout
+	-$(RM) 4_Integarating_CMSIS-DSP.elf 4_Integarating_CMSIS-DSP.list 4_Integarating_CMSIS-DSP.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
