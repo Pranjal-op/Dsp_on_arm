@@ -5701,3 +5701,63 @@ ThreadId: 146 ThreadName: Framework stop - Equinox Container: 67f707ab-2a00-47b4
     org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:226)
     java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
 	... 23 more
+!SESSION 2022-10-13 21:02:39.345 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-10-13 21:02:59.859
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-10-13 21:03:00.009
+!MESSAGE Log4j initialized with config file D:\Programming\Dsp_on_arm\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-10-13 21:03:09.778
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-10-13 21:11:09.822
+!MESSAGE Indexed '10_Convulution_impulseresponse' (5 sources, 64 headers) in 3.96 sec: 4,785 declarations; 5,893 references; 8 unresolved inclusions; 66 syntax errors; 1,208 unresolved names (10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-10-13 21:12:25.928
+!MESSAGE Indexed '10_Convulution_impulsreponse' (5 sources, 11 headers) in 1.2 sec: 2,903 declarations; 3,113 references; 18 unresolved inclusions; 65 syntax errors; 1,244 unresolved names (17%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:06:27.163
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:06:41.192
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:07:31.942
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:07:53.540
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:10:05.447
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:13:28.570
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:18:38.177
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:19:28.506
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 22:52:24.204
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 23:30:39.419
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 23:32:16.500
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 23:33:22.653
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-10-13 23:33:49.399
+!MESSAGE Won't launch debug session since we failed to locate the binary.

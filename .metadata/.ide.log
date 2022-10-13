@@ -1125,3 +1125,16 @@
 2022-10-13 01:22:03,385 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 2022-10-13 01:22:03,386 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
 2022-10-13 01:22:03,388 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-13 21:03:00,011 [INFO] Activator:177 - 
+
+
+2022-10-13 21:03:00,012 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-13 21:03:12,472 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-13 21:03:23,353 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2022-10-13 21:03:28,383 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-13 21:03:31,576 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-13 21:03:34,004 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-13 21:03:34,011 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-13 21:03:34,017 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-13 21:03:35,364 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-13 21:03:57,052 [ERROR] AdobePublisher:183 - Exception while getting the server answer: java.net.SocketTimeoutException: Read timed out

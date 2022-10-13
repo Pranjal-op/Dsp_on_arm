@@ -1,5 +1,0 @@
-../Src/main.c:17:5:main	8	static
-../Src/main.c:37:13:plot_input_signal	16	static
-../Src/main.c:47:13:serial_plot_input_sig	16	static
-../Src/main.c:54:13:pseudo_dly	24	static
-../Src/main.c:61:13:fpu_enable	4	static
