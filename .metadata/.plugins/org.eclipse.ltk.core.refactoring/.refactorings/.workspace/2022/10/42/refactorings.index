@@ -23,3 +23,6 @@
 1665675851873	Delete resource '10_Convulution_impulseresponse/9_Signal_CMSIS-DSP.launch'
 1665771926082	Delete resource '11_Convulution_Algorithm/Debug'
 1665771961640	Delete resource '11_Convulution_Algorithm/10_Convulution_impulseresponse Debug.launch'
+1665776312085	Rename resource '11_Convulution_AnalyzingResults'
+1665776329150	Delete resource '12_Convulution_AnalyzingResults/Debug'
+1665776338867	Delete resource '12_Convulution_AnalyzingResults/11_Convulution_Algorithm.launch'

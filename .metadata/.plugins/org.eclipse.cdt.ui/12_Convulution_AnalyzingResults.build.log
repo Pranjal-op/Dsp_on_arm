@@ -1,0 +1,10 @@
+01:44:19 **** Incremental Build of configuration Debug for project 12_Convulution_AnalyzingResults ****
+make -j4 all 
+arm-none-eabi-size   12_Convulution_AnalyzingResults.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24724	   1872	   2976	  29572	   7384	12_Convulution_AnalyzingResults.elf
+Finished building: default.size.stdout
+ 
+
+01:44:19 Build Finished. 0 errors, 0 warnings. (took 335ms)
+
