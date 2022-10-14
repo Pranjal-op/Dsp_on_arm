@@ -1,0 +1,10 @@
+00:46:40 **** Incremental Build of configuration Debug for project 11_Convulution_Algorithm ****
+make -j4 all 
+arm-none-eabi-size   11_Convulution_Algorithm.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24572	   1872	   2976	  29420	   72ec	11_Convulution_Algorithm.elf
+Finished building: default.size.stdout
+ 
+
+00:46:40 Build Finished. 0 errors, 0 warnings. (took 321ms)
+

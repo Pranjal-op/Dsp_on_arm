@@ -1138,3 +1138,53 @@
 2022-10-13 21:03:34,017 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 2022-10-13 21:03:35,364 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
 2022-10-13 21:03:57,052 [ERROR] AdobePublisher:183 - Exception while getting the server answer: java.net.SocketTimeoutException: Read timed out
+2022-10-13 23:40:55,538 [INFO] Activator:177 - 
+
+
+2022-10-13 23:40:55,540 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-13 23:41:09,130 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:10,173 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:10,194 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:11,682 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:11,761 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:11,792 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:15,393 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:15,416 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:15,450 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:41:31,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-13 23:41:31,369 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-13 23:41:31,372 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-13 23:46:57,512 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:46:58,591 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:46:58,612 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:50:36,346 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:50:38,288 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:50:38,313 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:52:07,096 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:52:07,115 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:52:07,136 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:53:53,218 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:53:54,306 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:53:54,328 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:56:59,663 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:57:01,240 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-13 23:57:01,277 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:52:58,938 [INFO] Activator:177 - 
+
+
+2022-10-14 23:52:58,942 [INFO] Activator:178 - !SESSION log4j initialized
+2022-10-14 23:53:10,291 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:10,357 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:10,526 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:12,421 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:12,497 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:12,575 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-14 23:53:31,585 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-10-14 23:53:31,585 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-10-14 23:53:31,585 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-10-15 00:46:15,398 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-15 00:46:15,452 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-15 00:46:15,606 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-15 00:46:43,524 [ERROR] ConfigurationRetriever:139 - IOException on connection: Read timed out
+2022-10-15 00:46:45,433 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+2022-10-15 00:46:45,511 [ERROR] ConfigurationRetriever:139 - IOException on connection: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target

@@ -1,0 +1,8 @@
+../Src/main.c:22:5:main	8	static
+../Src/main.c:39:13:plot_impulse_response	16	static
+../Src/main.c:48:13:serial_plot_impulse_response	16	static
+../Src/main.c:58:13:plot_input_signal	16	static
+../Src/main.c:68:13:serial_plot_input_signal	16	static
+../Src/main.c:77:13:serial_plot_input_sig	16	static
+../Src/main.c:85:13:pseudo_dly	24	static
+../Src/main.c:92:13:fpu_enable	4	static
