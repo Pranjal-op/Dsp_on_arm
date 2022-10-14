@@ -1,0 +1,10 @@
+02:04:32 **** Incremental Build of configuration Debug for project 13_Convulution_CMSIS_DSP ****
+make -j4 all 
+arm-none-eabi-size   13_Convulution_CMSIS_DSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25804	   1872	   2976	  30652	   77bc	13_Convulution_CMSIS_DSP.elf
+Finished building: default.size.stdout
+ 
+
+02:04:32 Build Finished. 0 errors, 0 warnings. (took 308ms)
+
