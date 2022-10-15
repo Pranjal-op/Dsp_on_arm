@@ -1,8 +1,0 @@
-../Src/main.c:25:5:main	8	static
-../Src/main.c:48:18:signal_mean	24	static
-../Src/main.c:61:18:signal_variance	32	static
-../Src/main.c:71:18:signal_std	24	static
-../Src/main.c:76:13:plot_input_signal	16	static
-../Src/main.c:86:13:serial_plot_input_sig	16	static
-../Src/main.c:93:13:pseudo_dly	24	static
-../Src/main.c:100:13:fpu_enable	4	static
