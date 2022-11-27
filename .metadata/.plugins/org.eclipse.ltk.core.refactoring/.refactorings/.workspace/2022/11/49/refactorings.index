@@ -3,3 +3,5 @@
 1669544555652	Delete resource '19_ClockConfig/18_IDFT_Algo.launch'
 1669544567402	Delete resource '19_ClockConfig/Debug'
 1669549830853	Delete resource '18_IDFT_Algo/19_ClockConfig.launch'
+1669570165362	Delete resource '20_FIR_Design/Debug'
+1669570174750	Delete resource '20_FIR_Design/19_ClockConfig.launch'

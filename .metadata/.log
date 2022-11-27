@@ -9685,3 +9685,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-27 22:50:27.370
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-27 22:54:05.841
+!MESSAGE Indexed '20_FIR_Design' (7 sources, 73 headers) in 1.88 sec: 5,403 declarations; 6,051 references; 3 unresolved inclusions; 63 syntax errors; 583 unresolved names (4.8%)

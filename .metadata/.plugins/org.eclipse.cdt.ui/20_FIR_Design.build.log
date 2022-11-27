@@ -1,0 +1,10 @@
+23:27:54 **** Incremental Build of configuration Debug for project 20_FIR_Design ****
+make -j8 all 
+arm-none-eabi-size   20_FIR_Design.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24812	   5284	   6388	  36484	   8e84	20_FIR_Design.elf
+Finished building: default.size.stdout
+ 
+
+23:27:54 Build Finished. 0 errors, 0 warnings. (took 181ms)
+

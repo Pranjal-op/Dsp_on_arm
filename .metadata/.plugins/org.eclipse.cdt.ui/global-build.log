@@ -1,4 +1,4 @@
-18:41:52 **** Incremental Build of configuration Debug for project 19_ClockConfig ****
+23:27:33 **** Incremental Build of configuration Debug for project 20_FIR_Design ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
@@ -7,39 +7,36 @@ D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSI
    51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
       | 
 <command-line>: note: this is the location of the previous definition
-../Src/main.c:235:13: warning: 'serial_plot_output_sig' defined but not used [-Wunused-function]
-  235 | static void serial_plot_output_sig(void)
-      |             ^~~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:227:13: warning: 'serial_plot_input_sig' defined but not used [-Wunused-function]
-  227 | static void serial_plot_input_sig(void)
+../Src/main.c:222:13: warning: 'serial_plot_input_sig' defined but not used [-Wunused-function]
+  222 | static void serial_plot_input_sig(void)
       |             ^~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:218:13: warning: 'serial_plot_input_signal' defined but not used [-Wunused-function]
-  218 | static void serial_plot_input_signal(void){
+../Src/main.c:213:13: warning: 'serial_plot_input_signal' defined but not used [-Wunused-function]
+  213 | static void serial_plot_input_signal(void){
       |             ^~~~~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:208:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
-  208 | static void plot_input_signal(void){
+../Src/main.c:203:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  203 | static void plot_input_signal(void){
       |             ^~~~~~~~~~~~~~~~~
-../Src/main.c:198:13: warning: 'serial_plot_impulse_response' defined but not used [-Wunused-function]
-  198 | static void serial_plot_impulse_response(void)
+../Src/main.c:193:13: warning: 'serial_plot_impulse_response' defined but not used [-Wunused-function]
+  193 | static void serial_plot_impulse_response(void)
       |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:189:13: warning: 'plot_impulse_response' defined but not used [-Wunused-function]
-  189 | static void plot_impulse_response(void)
+../Src/main.c:184:13: warning: 'plot_impulse_response' defined but not used [-Wunused-function]
+  184 | static void plot_impulse_response(void)
       |             ^~~~~~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "19_ClockConfig.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\19_ClockConfig\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="19_ClockConfig.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\19_ClockConfig\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 19_ClockConfig.elf
+arm-none-eabi-gcc -o "20_FIR_Design.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\20_FIR_Design\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20_FIR_Design.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\20_FIR_Design\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20_FIR_Design.elf
  
-arm-none-eabi-size   19_ClockConfig.elf 
-arm-none-eabi-objdump -h -S  19_ClockConfig.elf  > "19_ClockConfig.list"
+arm-none-eabi-size   20_FIR_Design.elf 
+arm-none-eabi-objdump -h -S  20_FIR_Design.elf  > "20_FIR_Design.list"
    text	   data	    bss	    dec	    hex	filename
-  30788	   3036	   6708	  40532	   9e54	19_ClockConfig.elf
+  24812	   5284	   6388	  36484	   8e84	20_FIR_Design.elf
 Finished building: default.size.stdout
  
-Finished building: 19_ClockConfig.list
+Finished building: 20_FIR_Design.list
  
-18:41:58 **** Incremental Build of configuration Debug for project 19_ClockConfig ****
+23:27:54 **** Incremental Build of configuration Debug for project 20_FIR_Design ****
 make -j8 all 
-arm-none-eabi-size   19_ClockConfig.elf 
+arm-none-eabi-size   20_FIR_Design.elf 
    text	   data	    bss	    dec	    hex	filename
-  30788	   3036	   6708	  40532	   9e54	19_ClockConfig.elf
+  24812	   5284	   6388	  36484	   8e84	20_FIR_Design.elf
 Finished building: default.size.stdout
  
