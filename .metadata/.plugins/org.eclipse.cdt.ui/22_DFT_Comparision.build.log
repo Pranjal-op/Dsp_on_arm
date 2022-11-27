@@ -1,0 +1,10 @@
+00:01:56 **** Incremental Build of configuration Debug for project 22_DFT_Comparision ****
+make -j8 all 
+arm-none-eabi-size   22_DFT_Comparision.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30028	   4480	   5584	  40092	   9c9c	22_DFT_Comparision.elf
+Finished building: default.size.stdout
+ 
+
+00:01:56 Build Finished. 0 errors, 0 warnings. (took 170ms)
+

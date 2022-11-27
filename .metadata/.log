@@ -9688,3 +9688,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-11-27 22:54:05.841
 !MESSAGE Indexed '20_FIR_Design' (7 sources, 73 headers) in 1.88 sec: 5,403 declarations; 6,051 references; 3 unresolved inclusions; 63 syntax errors; 583 unresolved names (4.8%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-27 23:39:01.210
+!MESSAGE Indexed '21_FIR_DesignHighPass' (7 sources, 74 headers) in 0.698 sec: 6,089 declarations; 8,657 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.014%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-27 23:53:02.694
+!MESSAGE Indexed '22_DFT_Comparision' (7 sources, 74 headers) in 0.621 sec: 6,091 declarations; 8,661 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.014%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-28 00:05:14.634
+!MESSAGE Indexed '23_MovingAverageFilter' (5 sources, 64 headers) in 0.667 sec: 4,785 declarations; 5,893 references; 8 unresolved inclusions; 66 syntax errors; 1,208 unresolved names (10%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-11-28 00:30:40.453
+!MESSAGE Won't launch debug session since we failed to locate the binary.
