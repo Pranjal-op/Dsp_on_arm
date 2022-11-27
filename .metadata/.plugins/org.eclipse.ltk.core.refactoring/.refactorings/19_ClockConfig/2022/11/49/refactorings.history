@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Templates&apos; to &apos;Source&apos;" description="Move &apos;Templates&apos; to &apos;Source&apos;" destination="chip_headers/CMSIS/Device/ST/STM32F4xx/Source" element1="chip_headers/CMSIS/Device/ST/STM32F4xx/Templates" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1669545298004" updateReferences="true"/>
+</session>

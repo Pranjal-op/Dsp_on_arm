@@ -1,0 +1,10 @@
+18:09:16 **** Incremental Build of configuration Debug for project 18_IDFT_Algo ****
+make -j8 all 
+arm-none-eabi-size   18_IDFT_Algo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30492	   3036	   6708	  40236	   9d2c	18_IDFT_Algo.elf
+Finished building: default.size.stdout
+ 
+
+18:09:17 Build Finished. 0 errors, 0 warnings. (took 187ms)
+

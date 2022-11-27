@@ -1,0 +1,10 @@
+17:30:51 **** Incremental Build of configuration Debug for project 17_Plot_ECG ****
+make -j8 all 
+arm-none-eabi-size   17_Plot_ECG.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29876	   4312	   2856	  37044	   90b4	17_Plot_ECG.elf
+Finished building: default.size.stdout
+ 
+
+17:30:51 Build Finished. 0 errors, 0 warnings. (took 172ms)
+

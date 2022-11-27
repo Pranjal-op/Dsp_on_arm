@@ -1,0 +1,10 @@
+17:51:23 **** Incremental Build of configuration Debug for project 16_DFT_Algo ****
+make -j8 all 
+arm-none-eabi-size   16_DFT_Algo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29868	   1752	   2856	  34476	   86ac	16_DFT_Algo.elf
+Finished building: default.size.stdout
+ 
+
+17:51:23 Build Finished. 0 errors, 0 warnings. (took 175ms)
+

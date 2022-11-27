@@ -1,0 +1,14 @@
+../Src/main.c:43:5:main	8	static
+../Src/main.c:71:6:serial_plot_ecg_signal	16	static
+../Src/main.c:80:6:serial_plot_rex	16	static
+../Src/main.c:88:6:get_dft_output_mag	16	static
+../Src/main.c:96:6:calc_sig_dft	56	static
+../Src/main.c:122:13:plot_impulse_response	16	static
+../Src/main.c:131:13:serial_plot_impulse_response	16	static
+../Src/main.c:141:13:plot_input_signal	16	static
+../Src/main.c:151:13:serial_plot_input_signal	16	static
+../Src/main.c:160:13:serial_plot_input_sig	16	static
+../Src/main.c:168:13:serial_plot_output_sig	16	static
+../Src/main.c:178:6:serial_plot_all	16	static
+../Src/main.c:189:13:pseudo_dly	24	static
+../Src/main.c:196:13:fpu_enable	4	static

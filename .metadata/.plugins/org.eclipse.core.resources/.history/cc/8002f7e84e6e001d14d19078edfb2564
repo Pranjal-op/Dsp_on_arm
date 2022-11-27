@@ -1,0 +1,271 @@
+#include "stm32f4xx.h"
+#include "signals.h"
+#include "uart.h"
+#include <stdio.h>
+#include "arm_math.h"
+#include "systick.h"
+
+#define OFFSET1    5
+#define OFFSET2    10
+
+extern float _5hz_signal[HZ_5_SIG_LEN];
+extern float32_t input_signal_f32_1kHz_15kHz[KHZ1_15_SIG_LEN];
+extern float32_t  impulse_response[IMP_RSP_LENGTH];
+extern float32_t _640_points_ecg_[ECG_SIG_LENGHT];
+
+
+float32_t output_signal_arr[KHZ1_15_SIG_LEN];
+float32_t idft_output_signal_arr[ECG_SIG_LENGHT];
+
+float REX[ECG_SIG_LENGHT/2];
+float IMX[ECG_SIG_LENGHT/2];
+
+float g_in_sig_sample;
+float g_imp_rsp_sample;
+
+static void plot_input_signal(void);
+static void serial_plot_input_sig(void);
+static void plot_impulse_response(void);
+static void serial_plot_impulse_response(void);
+static void serial_plot_output_sig(void);
+void serial_plot_all(void);
+
+void calc_sig_dft(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t *sig_dest_imx_arr,
+		uint32_t sig_lenght);
+
+void calc_sig_idft(float32_t *idft_out_arr, float32_t *sig_src_rex_arr, float32_t *sig_src_imx_arr,
+		uint32_t idft_lenght);
+
+static void pseudo_dly(int dly);
+static void fpu_enable(void);
+
+void serial_plot_rex(void);
+void get_dft_output_mag(void);
+void serial_plot_ecg_signal(void);
+void serial_plot_orig_sig_and_idft_sig(void);
+
+
+int main(){
+
+	// enable fpuloat32_t g_mean_value;
+
+	fpu_enable();
+
+   // Intialize the uart
+   uart2_tx_init();
+
+   /*Initialize systick counter*/
+   systick_counter_init();
+
+
+   // computing signal dft
+   calc_sig_dft((float32_t *)_640_points_ecg_, (float32_t *)REX, (float32_t *)IMX,
+   		(uint32_t)ECG_SIG_LENGHT);
+
+   // computing signal idft
+
+   calc_sig_idft((float32_t *)idft_output_signal_arr, (float32_t *)REX, (float32_t *)IMX,
+   		(uint32_t) ECG_SIG_LENGHT);
+
+
+   // COMPUTING DFT MAGNITUDE
+   //get_dft_output_mag();
+
+
+	while(1)
+	{
+	//	serial_plot_all();
+		serial_plot_orig_sig_and_idft_sig();
+
+   }
+}
+
+void serial_plot_orig_sig_and_idft_sig(void){
+	int i;
+	for(i= 0; i<ECG_SIG_LENGHT;i++){
+
+		printf("%f,",OFFSET1+_640_points_ecg_[i]);
+		printf("%f,",idft_output_signal_arr[i]);
+		pseudo_dly(9000);
+	}
+
+}
+
+void serial_plot_ecg_signal(void){
+
+	for(int i = 0; i< ECG_SIG_LENGHT ; i++){
+
+		printf("%f\n\r", _640_points_ecg_[i]);
+		pseudo_dly(9000);
+	}
+}
+
+void serial_plot_rex(void){
+
+	for(int j =0;j<(KHZ1_15_SIG_LEN/2) ; j++){
+		printf("%f\r\n",REX[j]);
+		pseudo_dly(9000);
+	}
+}
+
+void get_dft_output_mag(void){
+
+	for(int k = 0; k<(KHZ1_15_SIG_LEN/2) ;k++){
+
+		REX[k] = fabs(REX[k]);
+	}
+}
+
+//idft calculator
+
+void calc_sig_idft(float32_t *idft_out_arr, float32_t *sig_src_rex_arr, float32_t *sig_src_imx_arr,
+		uint32_t idft_lenght){
+
+	int i,k;
+	// normalizing amplitude of freq domain signal
+
+	for(k = 0;k< idft_lenght/2 ; k++){
+
+		sig_src_rex_arr[k] = sig_src_rex_arr[k]/(idft_lenght/2);
+		sig_src_imx_arr[k] = -sig_src_imx_arr[k]/(idft_lenght/2);
+	}
+	// deal with index 0
+	sig_src_rex_arr[0] = sig_src_rex_arr[0]/(idft_lenght);
+	sig_src_imx_arr[0] = -sig_src_imx_arr[0]/(idft_lenght);
+
+	// deal with index n/2, where n = idft lenght
+	sig_src_rex_arr[idft_lenght/2] = sig_src_rex_arr[idft_lenght/2]/(idft_lenght);
+	sig_src_imx_arr[idft_lenght/2] = -sig_src_imx_arr[idft_lenght/2]/(idft_lenght);
+
+
+	// clearing output buffer
+
+	for(i = 0;i<idft_lenght;i++){
+		idft_out_arr[i] = 0;
+
+	}
+
+	// perform idft
+
+	for(k = 0;k< (idft_lenght/2); k++){
+		for(i = 0; i <idft_lenght; i++){
+
+			idft_out_arr[i] = idft_out_arr[i] + sig_src_rex_arr[k]*cos(2*PI*k*i/idft_lenght);
+			idft_out_arr[i] = idft_out_arr[i] + sig_src_imx_arr[k]*sin(2*PI*k*i/idft_lenght);
+		}
+	}
+
+}
+
+//dft calculator
+void calc_sig_dft(float32_t *sig_src_arr, float32_t *sig_dest_rex_arr, float32_t *sig_dest_imx_arr,
+		uint32_t sig_lenght){
+
+	int i,j,k;
+	//clearing  dest buff
+
+	for(j =0;j<(sig_lenght/2) ; j++){
+
+		sig_dest_rex_arr[j] = 0;
+		sig_dest_imx_arr[j] = 0;
+	}
+
+	// computing dft
+
+	for(k = 0; k < (sig_lenght/2); k++){
+
+		for(i = 0; i<sig_lenght ;i++){
+
+			sig_dest_rex_arr[k] = sig_dest_rex_arr[k] + sig_src_arr[i]*cos(2*PI*k*i/sig_lenght);
+			sig_dest_imx_arr[k] = sig_dest_imx_arr[k] + sig_src_arr[i]*sin(2*PI*k*i/sig_lenght);
+		}
+	}
+
+
+}
+
+static void plot_impulse_response(void)
+{
+	for( int i = 0; i < IMP_RSP_LENGTH; i++ )
+	{
+		g_imp_rsp_sample = impulse_response[i];
+		pseudo_dly(90000);
+	}
+}
+
+static void serial_plot_impulse_response(void)
+{
+	for( int i = 0; i < IMP_RSP_LENGTH; i++ )
+	{
+		printf("%f\r\n", impulse_response[i]);
+		pseudo_dly(90000);
+	}
+}
+
+
+static void plot_input_signal(void){
+
+		int i;
+
+		for(i = 0;i<KHZ1_15_SIG_LEN;i++ ){
+			g_in_sig_sample = input_signal_f32_1kHz_15kHz[i] ;
+			pseudo_dly(90000);
+		}
+	}
+
+static void serial_plot_input_signal(void){
+
+		int i;
+
+		for(i = 0;i<KHZ1_15_SIG_LEN;i++ ){
+			g_in_sig_sample = input_signal_f32_1kHz_15kHz[i] ;
+			pseudo_dly(90000);
+		}
+	}
+static void serial_plot_input_sig(void)
+{
+	for(int i = 0;i<KHZ1_15_SIG_LEN;i++ )
+	{
+		printf("%f\r\n", input_signal_f32_1kHz_15kHz[i]) ;
+		pseudo_dly(90000);
+	}
+}
+static void serial_plot_output_sig(void)
+{
+	for(int i = 0;i< (KHZ1_15_SIG_LEN + IMP_RSP_LENGTH -1);i++ )
+	{
+		printf("%f\r\n", output_signal_arr[i]) ;
+		pseudo_dly(90000);
+	}
+}
+
+
+void serial_plot_all(void)
+{
+
+	for( int  k=0; k< KHZ1_15_SIG_LEN ; k++ )
+	{
+
+		printf("%f,",OFFSET1 + input_signal_f32_1kHz_15kHz[k]);
+		printf("%f\n\r",output_signal_arr[k]);
+		pseudo_dly(90000);
+	 }
+}
+static void pseudo_dly(int dly){
+
+		for(int i = 0;i<dly;i++){
+
+		}
+	}
+
+static void fpu_enable(void){
+	/* enabling floating point unit */
+	   /*SCB-> CPACR |=((3UL << 10*2) | (3UL << 11*2)) ;*/
+		// More readable way to enable the fpu
+
+	   SCB ->CPACR |=(1U<<20);
+	   SCB-> CPACR |=(1U<<21);
+	   SCB-> CPACR |=(1U<<22);
+	   SCB-> CPACR |=(1U<<23);
+
+}

@@ -1,10 +1,10 @@
-15:03:33 **** Incremental Build of configuration Debug for project 15_Runningsum ****
-make -j4 all 
+13:12:20 **** Incremental Build of configuration Debug for project 15_Runningsum ****
+make -j8 all 
 arm-none-eabi-size   15_Runningsum.elf 
    text	   data	    bss	    dec	    hex	filename
   24620	   1756	   2980	  29356	   72ac	15_Runningsum.elf
 Finished building: default.size.stdout
  
 
-15:03:33 Build Finished. 0 errors, 0 warnings. (took 276ms)
+13:12:20 Build Finished. 0 errors, 0 warnings. (took 170ms)
 
