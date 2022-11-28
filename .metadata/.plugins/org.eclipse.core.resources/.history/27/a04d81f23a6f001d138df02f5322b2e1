@@ -1,0 +1,21 @@
+#include "fir_filter.h"
+
+void fir_filter_init(fir_filter_type * fir){
+
+	// clearing buffer
+	for(int i = 0; i<FIR_FILTER_LEN ; i++){
+		fir->buff[i]=0;
+
+	}
+	// reset buffer index
+	fir->buff_idx = 0;
+	// clear filter output
+
+	fir->out = 0.00f;
+}
+
+
+float32_t fir_filter_update(fir_filter_type * fir , float32_tinput){
+
+
+}

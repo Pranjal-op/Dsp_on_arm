@@ -11,3 +11,7 @@
 1669573401490	Delete resource '22_DFT_Comparision/21_FIR_DesignHighPass.launch'
 1669574155760	Delete resource '23_MovingAverageFilter/9_Signal_CMSIS-DSP.launch'
 1669574164674	Delete resource '23_MovingAverageFilter/Debug'
+1669622179364	Delete resource '24_ADC_Driver/Debug'
+1669623238557	Delete resource '23_MovingAverageFilter/24_ADC_Driver.launch'
+1669652190005	Delete resource '25_FIR_live_filter/24_ADC_Driver.launch'
+1669652197401	Delete resource '25_FIR_live_filter/Debug'

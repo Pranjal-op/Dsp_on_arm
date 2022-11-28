@@ -1,0 +1,27 @@
+#include "adc.h"
+
+#define GPIOAEN  (1U<<0)
+
+
+
+void pa1_adc_init(void){
+
+	/* configuring the adc gpio pin */
+	// list of step for configuring the adc gpio pin
+
+	// 1 enable clock access to gpioa
+	RCC->AHB1ENR |= GPIOAEN;
+	// 2 setr pa1 mode to analog mode
+	GPIOA-> MODER |= (1U<<2);
+	GPIOA-> MODER |= (1U<<3);
+
+	/*configuring adc module */
+	// list of step for configuring adc module
+
+	// 1 enable clock access to the adc module
+	// 2 set start of conversion sequence
+	// 3 set conversion sequence lenght
+
+	/* enabe adc module */
+
+}

@@ -1,0 +1,7 @@
+../Src/main.c:25:5:main	8	static
+../Src/main.c:50:6:moving_average	48	static
+../Src/main.c:69:13:serial_plot_both_sig	16	static
+../Src/main.c:78:13:plot_input_signal	16	static
+../Src/main.c:88:13:serial_plot_input_sig	16	static
+../Src/main.c:95:13:pseudo_dly	24	static
+../Src/main.c:102:13:fpu_enable	4	static

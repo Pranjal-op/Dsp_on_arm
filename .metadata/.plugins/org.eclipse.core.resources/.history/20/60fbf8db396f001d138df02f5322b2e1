@@ -1,0 +1,16 @@
+#ifndef __fir_filter_h__
+#define __fir_filter_h__
+
+#include <stdint.h>
+#include "arm_math.h"
+
+#define FIR_FILTER_LEN   10
+
+typedef struct{
+	float32_t buff[FIR_FILTER_LEN];
+	uint32_t buff_idx;
+	float32_t out;
+
+}fir_filter ;
+
+#endif

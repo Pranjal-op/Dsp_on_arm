@@ -1,0 +1,34 @@
+#include "fir_filter.h"
+
+void fir_filter_init(fir_filter_type * fir, float32_t *fltr_kernel){
+
+	// clearing buffer
+	for(int i = 0; i<FIR_FILTER_LEN ; i++){
+		fir->buff[i]=0;
+
+	}
+	// reset buffer index
+	fir->buff_idx = 0;
+	// clear filter output
+
+	fir->out = 0.00f;
+	//set filter kernel
+	fir->kernel = fltr_kernel;
+}
+
+
+float32_t fir_filter_update(fir_filter_type * fir , float32_tinput){
+	// store latest sample in the buffer
+
+	fir->buff[fir->buff_idx] = curr_sample;
+
+	//increment buff index and wrap around if at the end
+
+	fir->buff_idx++;
+
+	if(fir->buff_idx == FIR_FILTER_LEN){
+
+		fir->buff_idx = 0;
+	}
+
+}

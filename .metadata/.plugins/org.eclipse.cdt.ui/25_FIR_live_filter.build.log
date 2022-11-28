@@ -1,0 +1,17 @@
+23:37:11 **** Incremental Build of configuration Debug for project 25_FIR_live_filter ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/fir_filter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/fir_filter.d" -MT"Src/fir_filter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/fir_filter.o"
+arm-none-eabi-gcc -o "25_FIR_live_filter.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\25_FIR_live_filter\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="25_FIR_live_filter.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\25_FIR_live_filter\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 25_FIR_live_filter.elf
+ 
+arm-none-eabi-size   25_FIR_live_filter.elf 
+arm-none-eabi-objdump -h -S  25_FIR_live_filter.elf  > "25_FIR_live_filter.list"
+   text	   data	    bss	    dec	    hex	filename
+  25084	    600	   1616	  27300	   6aa4	25_FIR_live_filter.elf
+Finished building: default.size.stdout
+ 
+Finished building: 25_FIR_live_filter.list
+ 
+
+23:37:12 Build Finished. 0 errors, 0 warnings. (took 565ms)
+
