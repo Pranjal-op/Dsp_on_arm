@@ -14,7 +14,7 @@ void pa1_adc_init(void){
 
 	// 1 enable clock access to gpioa
 	RCC->AHB1ENR |= GPIOAEN;
-	// 2 setr pa1 mode to analog mode
+	// 2 set pa1 mode to analog mode
 	GPIOA-> MODER |= (1U<<2);
 	GPIOA-> MODER |= (1U<<3);
 

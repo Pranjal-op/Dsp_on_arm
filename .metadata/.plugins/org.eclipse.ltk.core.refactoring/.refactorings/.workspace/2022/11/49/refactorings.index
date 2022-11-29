@@ -15,3 +15,6 @@
 1669623238557	Delete resource '23_MovingAverageFilter/24_ADC_Driver.launch'
 1669652190005	Delete resource '25_FIR_live_filter/24_ADC_Driver.launch'
 1669652197401	Delete resource '25_FIR_live_filter/Debug'
+1669737445649	Delete resource '24_FIFO_Data_structur'
+1669737504496	Delete resource '26_FIFO_DataStructure/Debug'
+1669743345092	Delete resource '27_BackgroundThread/Debug'

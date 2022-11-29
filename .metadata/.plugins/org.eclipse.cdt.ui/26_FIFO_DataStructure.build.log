@@ -1,0 +1,10 @@
+22:27:54 **** Incremental Build of configuration Debug for project 26_FIFO_DataStructure ****
+make -j8 all 
+arm-none-eabi-size   26_FIFO_DataStructure.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24876	    476	   2996	  28348	   6ebc	26_FIFO_DataStructure.elf
+Finished building: default.size.stdout
+ 
+
+22:27:54 Build Finished. 0 errors, 0 warnings. (took 254ms)
+

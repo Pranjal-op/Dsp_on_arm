@@ -1,0 +1,14 @@
+#ifndef __FIFO_H__
+#define __FIFO_H__
+
+#include <stdint.h>
+
+#define RXFIFOSIZE     300
+#define RXFAIL         0
+#define RXFIFOSUCCES   1
+
+typedef uint32_t rx_datatype;
+
+
+
+#endif

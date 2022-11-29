@@ -1,0 +1,3 @@
+#include "fifo.h"
+
+rx_dataType RX_FIFO[RXFIFOSIZE];
