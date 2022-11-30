@@ -53,7 +53,7 @@ int main(){
 
 		printf("%d,",(int)g_sensor_value);
 		printf("%d\n\r",(int)fltr_sensor_value);
-		pseudo_dly(10000);
+		pseudo_dly(100000);
    }
 }
 

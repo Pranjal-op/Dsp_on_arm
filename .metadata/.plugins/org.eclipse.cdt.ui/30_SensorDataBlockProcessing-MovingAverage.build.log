@@ -1,0 +1,10 @@
+20:31:31 **** Incremental Build of configuration Debug for project 30_SensorDataBlockProcessing-MovingAverage ****
+make -j8 all 
+arm-none-eabi-size   30_SensorDataBlockProcessing-MovingAverage.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25604	    476	   5196	  31276	   7a2c	30_SensorDataBlockProcessing-MovingAverage.elf
+Finished building: default.size.stdout
+ 
+
+20:31:31 Build Finished. 0 errors, 0 warnings. (took 178ms)
+

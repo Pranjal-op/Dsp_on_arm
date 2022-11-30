@@ -1,0 +1,43 @@
+19:59:06 **** Incremental Build of configuration Debug for project 28_SamplingInBackgroundThrd ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Src/main.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+../Src/main.c: In function 'main':
+../Src/main.c:38:2: warning: implicit declaration of function 'clock_100MHz_config' [-Wimplicit-function-declaration]
+   38 |  clock_100MHz_config();
+      |  ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:75:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'rx_dataType' {aka 'long unsigned int'} [-Wformat=]
+   75 |     printf("%d\n\r",sensor_data_buffer[i]);
+      |             ~^      ~~~~~~~~~~~~~~~~~~~~~
+      |              |                        |
+      |              int                      rx_dataType {aka long unsigned int}
+      |             %ld
+../Src/main.c: At top level:
+../Src/main.c:21:13: warning: 'plot_input_signal' declared 'static' but never defined [-Wunused-function]
+   21 | static void plot_input_signal(void);
+      |             ^~~~~~~~~~~~~~~~~
+../Src/main.c:22:13: warning: 'serial_plot_input_sig' declared 'static' but never defined [-Wunused-function]
+   22 | static void serial_plot_input_sig(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:133:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  133 | static void pseudo_dly(int dly){
+      |             ^~~~~~~~~~
+arm-none-eabi-gcc -o "28_SamplingInBackgroundThrd.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\28_SamplingInBackgroundThrd\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="28_SamplingInBackgroundThrd.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\28_SamplingInBackgroundThrd\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 28_SamplingInBackgroundThrd.elf
+ 
+arm-none-eabi-size   28_SamplingInBackgroundThrd.elf 
+arm-none-eabi-objdump -h -S  28_SamplingInBackgroundThrd.elf  > "28_SamplingInBackgroundThrd.list"
+   text	   data	    bss	    dec	    hex	filename
+  25332	    476	   3996	  29804	   746c	28_SamplingInBackgroundThrd.elf
+Finished building: default.size.stdout
+ 
+Finished building: 28_SamplingInBackgroundThrd.list
+ 
+
+19:59:06 Build Finished. 0 errors, 6 warnings. (took 810ms)
+

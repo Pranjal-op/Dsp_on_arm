@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include "arm_math.h"
 
-#define FIR_FILTER_LEN   10
+#define FIR_FILTER_LEN   31
 
 typedef struct{
 	float32_t *buff;

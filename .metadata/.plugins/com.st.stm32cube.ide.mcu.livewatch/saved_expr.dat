@@ -1,10 +1,3 @@
-g_mean_value
-g_variance_value
-g_std_value
-g_std_value_cmsis
-g_std_value_cmsis
-REX
-IMX
-idft_output_signal_arr
-_640_points_ecg_
-g_sensor_value
+sensor_data_buffer
+RX_FIFO
+bk_thread_profiler

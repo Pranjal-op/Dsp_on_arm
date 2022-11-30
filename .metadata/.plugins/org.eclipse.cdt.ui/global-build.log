@@ -1,7 +1,50 @@
-02:05:09 **** Incremental Build of configuration Debug for project 27_BackgroundThread ****
+20:31:08 **** Build of configuration Debug for project 30_SensorDataBlockProcessing-MovingAverage ****
 make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/clock.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/clock.d" -MT"Src/clock.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/clock.o"
+arm-none-eabi-gcc "../Src/fifo.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/fifo.d" -MT"Src/fifo.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/fifo.o"
+arm-none-eabi-gcc "../Src/fir_filter.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/fir_filter.d" -MT"Src/fir_filter.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/fir_filter.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Inc/clock.h:4,
+                 from ../Src/clock.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Inc/adc.h:4,
+                 from ../Src/adc.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Src/main.c:1:
+D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
+   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
 arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:2: warning: implicit declaration of function 'clock_100MHz_config' [-Wimplicit-function-declaration]
+   42 |  clock_100MHz_config();
+      |  ^~~~~~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:22:13: warning: 'plot_input_signal' declared 'static' but never defined [-Wunused-function]
+   22 | static void plot_input_signal(void);
+      |             ^~~~~~~~~~~~~~~~~
+../Src/main.c:23:13: warning: 'serial_plot_input_sig' declared 'static' but never defined [-Wunused-function]
+   23 | static void serial_plot_input_sig(void);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:145:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
+  145 | static void pseudo_dly(int dly){
+      |             ^~~~~~~~~~
 In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
                  from ../Inc/tim.h:4,
                  from ../Src/tim.c:1:
@@ -10,62 +53,34 @@ D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSI
       | 
 <command-line>: note: this is the location of the previous definition
 In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
-                 from ../Src/main.c:1:
+                 from ../Inc/uart.h:12,
+                 from ../Src/uart.c:1:
 D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
    51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
       | 
 <command-line>: note: this is the location of the previous definition
-../Src/main.c: In function 'main':
-../Src/main.c:29:16: error: invalid use of void expression
-   29 |  RCC->AHB1ENR |+
-      |                ^
-../Src/main.c:35:2: warning: implicit declaration of function 'clock_100MHz_config' [-Wimplicit-function-declaration]
-   35 |  clock_100MHz_config();
-      |  ^~~~~~~~~~~~~~~~~~~
-../Src/main.c: At top level:
-../Src/main.c:19:13: warning: 'plot_input_signal' declared 'static' but never defined [-Wunused-function]
-   19 | static void plot_input_signal(void);
-      |             ^~~~~~~~~~~~~~~~~
-../Src/main.c:20:13: warning: 'serial_plot_input_sig' declared 'static' but never defined [-Wunused-function]
-   20 | static void serial_plot_input_sig(void);
-      |             ^~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:73:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-   73 | static void pseudo_dly(int dly){
-      |             ^~~~~~~~~~
-make: *** [Src/subdir.mk:46: Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-02:05:40 **** Incremental Build of configuration Debug for project 27_BackgroundThread ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -DARM_MATH_CM4 -D__FPU_PRESENT -c -I../Inc -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Include" -I"D:/STMF32/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/Programming/Dsp_on_arm/5.Testing_cmsis-dsp_float32/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-In file included from D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
-                 from ../Src/main.c:1:
-D:/Programming/Dsp_on_arm/1_plotting_signal_with_logicanalyzer/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:51: warning: "__FPU_PRESENT" redefined
-   51 | #define __FPU_PRESENT             1U       /*!< FPU present                                   */
-      | 
-<command-line>: note: this is the location of the previous definition
-../Src/main.c: In function 'main':
-../Src/main.c:33:2: warning: implicit declaration of function 'clock_100MHz_config' [-Wimplicit-function-declaration]
-   33 |  clock_100MHz_config();
-      |  ^~~~~~~~~~~~~~~~~~~
-../Src/main.c: At top level:
-../Src/main.c:19:13: warning: 'plot_input_signal' declared 'static' but never defined [-Wunused-function]
-   19 | static void plot_input_signal(void);
-      |             ^~~~~~~~~~~~~~~~~
-../Src/main.c:20:13: warning: 'serial_plot_input_sig' declared 'static' but never defined [-Wunused-function]
-   20 | static void serial_plot_input_sig(void);
-      |             ^~~~~~~~~~~~~~~~~~~~~
-../Src/main.c:71:13: warning: 'pseudo_dly' defined but not used [-Wunused-function]
-   71 | static void pseudo_dly(int dly){
-      |             ^~~~~~~~~~
-arm-none-eabi-gcc -o "27_BackgroundThread.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\27_BackgroundThread\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="27_BackgroundThread.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\27_BackgroundThread\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 27_BackgroundThread.elf
+arm-none-eabi-gcc -o "30_SensorDataBlockProcessing-MovingAverage.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"D:\Programming\Dsp_on_arm\30_SensorDataBlockProcessing-MovingAverage\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="30_SensorDataBlockProcessing-MovingAverage.map" -Wl,--gc-sections -static -L"D:\Programming\Dsp_on_arm\30_SensorDataBlockProcessing-MovingAverage\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 30_SensorDataBlockProcessing-MovingAverage.elf
  
-arm-none-eabi-size   27_BackgroundThread.elf 
-arm-none-eabi-objdump -h -S  27_BackgroundThread.elf  > "27_BackgroundThread.list"
+arm-none-eabi-size   30_SensorDataBlockProcessing-MovingAverage.elf 
+arm-none-eabi-objdump -h -S  30_SensorDataBlockProcessing-MovingAverage.elf  > "30_SensorDataBlockProcessing-MovingAverage.list"
    text	   data	    bss	    dec	    hex	filename
-  25000	    476	   1588	  27064	   69b8	27_BackgroundThread.elf
+  25604	    476	   5196	  31276	   7a2c	30_SensorDataBlockProcessing-MovingAverage.elf
 Finished building: default.size.stdout
  
-Finished building: 27_BackgroundThread.list
+Finished building: 30_SensorDataBlockProcessing-MovingAverage.list
+ 
+20:31:15 **** Incremental Build of configuration Debug for project 30_SensorDataBlockProcessing-MovingAverage ****
+make -j8 all 
+arm-none-eabi-size   30_SensorDataBlockProcessing-MovingAverage.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25604	    476	   5196	  31276	   7a2c	30_SensorDataBlockProcessing-MovingAverage.elf
+Finished building: default.size.stdout
+ 
+20:31:31 **** Incremental Build of configuration Debug for project 30_SensorDataBlockProcessing-MovingAverage ****
+make -j8 all 
+arm-none-eabi-size   30_SensorDataBlockProcessing-MovingAverage.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25604	    476	   5196	  31276	   7a2c	30_SensorDataBlockProcessing-MovingAverage.elf
+Finished building: default.size.stdout
  
